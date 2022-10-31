@@ -144,7 +144,6 @@ def add_mark_in_student(students):
     student_cha[st_num].add_marks(mark)
     return student_cha
     
-
 def see_marks(students):
     normal_output(1, all_stud_name(students))
     print("\nВведите порядковый номер студента, чьи оценки хотите посмотреть.")
@@ -158,7 +157,8 @@ persons,teachers,students = hello()
 groups = []
 lessons = []
 
-comand_i = 1
+comand_i = 0
+comand_i += 1
 while comand_i != 0:
     print(
     f"\n-----------------------{comand_i}-----------------------\n"+
@@ -207,9 +207,3 @@ while comand_i != 0:
             print("Неизвестная команда!")
             comand_i = 0
     comand_i+=1
-
-# 1) Вычисления - крутишь сколько угодно, ничего не меняется.
-# 2) Действия - изменения происходят, когда производишь.
-# 3) Вычисления и действия в разных функциях.
-# 4) Ничего не должно меняться без ретурна и существовать вне функции одновременно.
-# 5) Глобальные переменные - плохо. Появляться в функциях должно то, что есть в аргументах. 
